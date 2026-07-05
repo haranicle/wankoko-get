@@ -161,12 +161,11 @@
   </div>
 
   <script>
-    // TODO: 実際のストアURLが確定したら差し替える
-    var APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXXX";
-    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.haranicle.wankoko";
+    var APP_STORE_URL = "https://hara.s.gy/wankokoios";
+    var PLAY_STORE_URL = "https://hara.s.gy/wankokoandtest";
 
     function isPlaceholder(url) {
-      return !url || url.indexOf("XXXXXXXXXX") !== -1;
+      return !url;
     }
 
     function detectOS() {
