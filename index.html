@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<title>ワンココ - アプリを入手</title>
+<link
+  rel="icon"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath d='M481.511,156C481.511,156 232.09,228.343 303,410C378.259,602.799 494.711,787.466 531,782C567.289,776.534 674.843,716.777 685,662C695.157,607.223 694,610.229 694,610.229C694,610.229 729.769,296.083 602.446,228C475.124,159.917 481.511,156 481.511,156Z' fill='%232A82DF'/%3E%3C/svg%3E"
+/>
+<style>
+  :root {
+    --brand-blue: #2a82df;
+    --brand-orange: #f0a500;
+    --brand-coral: #ff6b6b;
+    --text-main: #1c2b3a;
+    --text-sub: #5b6b7a;
+    --bg: #f4f8fc;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background: linear-gradient(180deg, var(--bg) 0%, #ffffff 60%);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 8px 16px rgba(42, 130, 223, 0.25));
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 0 0 6px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-sub);
+    margin: 0 0 32px;
+  }
+
+  .status {
+    font-size: 14px;
+    color: var(--text-sub);
+    margin: 0 0 24px;
+  }
+
+  .spinner {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto 16px;
+    border: 3px solid #dde6f0;
+    border-top-color: var(--brand-blue);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .store-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .store-buttons.visible {
+    display: flex;
+  }
+
+  .store-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--text-main);
+    transition: opacity 0.15s ease;
+  }
+
+  .store-button:active {
+    opacity: 0.8;
+  }
+
+  .store-button.ios {
+    background: #111318;
+  }
+
+  .store-button.android {
+    background: #01875f;
+  }
+
+  .hint {
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--text-sub);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <svg class="logo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <path d="M481.511,156C481.511,156 232.09,228.343 303,410C378.259,602.799 494.711,787.466 531,782C567.289,776.534 674.843,716.777 685,662C695.157,607.223 694,610.229 694,610.229C694,610.229 729.769,296.083 602.446,228C475.124,159.917 481.511,156 481.511,156Z" fill="#2a82df"/>
+      <g transform="matrix(1.707193,0,0,1.705455,-361.965158,-361.189232)">
+        <path d="M404.058,421.928C403.897,453.95 411.761,473.551 425.302,502.095C447.185,548.228 474.777,591.456 505.394,632.252C509.548,637.788 514.199,643.207 519.939,647.146C533.524,655.972 551.579,654.563 563.424,643.414C570.122,637.074 575.288,629.267 580.669,621.968C593.188,604.838 605.345,587.447 617.132,569.805C632.635,589.068 634.657,612.198 647.589,631.61C659.861,650.033 686.459,651.309 705.647,644.761C720.401,639.726 736.773,630.84 749.285,647.674C753.58,653.415 754.706,662.948 752.913,670.099C747.387,692.146 728.087,710.716 709.972,723.238C679.549,744.125 630.857,751.106 598.968,729.928C580.443,717.625 571.699,704.886 547.126,700.128C528.799,696.579 511.422,702.447 496.619,713.647C489.74,718.851 484.568,724.443 476.978,729.565C462.314,739.462 448.701,740.954 431.487,737.669C412.325,734.012 399.632,723.408 389.151,707.114C369.998,677.197 371.599,634.628 387.867,603.346C400.669,578.729 425.822,545.365 407.668,516.317C393.044,492.917 365.057,499.066 342.204,495.103C320.232,491.294 296.415,476.415 284.212,457.316C274.541,442.273 267.398,423.613 271.144,405.57C276.83,378.37 298.115,376.563 320.79,377.043C343.423,377.522 367.14,363.994 377.955,344.368C382.703,335.752 386.004,327.48 391.747,319.335C408.551,295.504 437.713,276.654 467.874,282.208C480.115,284.462 488.65,292.513 494.072,303.365C453.661,318.501 423.673,345.356 410.336,387.254C406.37,399.713 405.138,408.953 404.058,421.928Z" fill="#f0a500"/>
+      </g>
+      <g transform="matrix(1.707193,0,0,1.705455,-361.965158,-361.189232)">
+        <path d="M662.912,363.57C677.315,385.787 682.217,423.435 675.826,448.912C667.081,483.773 649.013,517.407 630.642,548.128C626.676,554.76 621.505,563.528 617.18,569.595C596.911,544.437 570.44,534.929 539.497,529.657C527.372,527.591 519.095,527.229 506.921,523.617C469.415,512.489 447.264,478.924 451.834,440.016C454.389,418.265 462.745,409.629 471.532,391.974L477.956,378.773C482.209,369.913 485.234,362.304 488.778,353.229C495.806,335.226 501.072,322.198 494.332,303.04C519.464,294.439 550.647,291.555 576.286,297.936C617.06,308.084 641.475,329.231 662.912,363.57Z" fill="#ff6b6b"/>
+      </g>
+      <g transform="matrix(1.707193,0,0,1.705455,-361.965158,-361.189232)">
+        <path d="M485.177,417.902C488.041,409.736 490.454,404.293 495.937,397.463C520.99,366.248 572.82,371.014 590.415,407.757C597.064,421.314 597.945,436.985 592.856,451.201C587.741,465.546 579.68,473.874 566.937,481.511C553.993,487.691 542.781,490.335 528.333,487.45C513.688,484.583 500.854,475.846 492.819,463.271C483.553,449.058 481.66,434.326 485.177,417.902Z" fill="white"/>
+      </g>
+    </svg>
+
+    <h1>ワンココ</h1>
+    <p class="subtitle">愛犬との散歩をフレンドと共有</p>
+
+    <div id="autoRedirect">
+      <div class="spinner"></div>
+      <p class="status">アプリストアに移動しています…</p>
+    </div>
+
+    <div id="storeButtons" class="store-buttons">
+      <a id="iosButton" class="store-button ios" href="#">App Store で入手</a>
+      <a id="androidButton" class="store-button android" href="#">Google Play で入手</a>
+    </div>
+
+    <p class="hint">自動的に切り替わらない場合は、上のボタンからお使いの機種を選んでください。</p>
+  </div>
+
+  <script>
+    // TODO: 実際のストアURLが確定したら差し替える
+    var APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXXX";
+    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.haranicle.wankoko";
+
+    function isPlaceholder(url) {
+      return !url || url.indexOf("XXXXXXXXXX") !== -1;
+    }
+
+    function detectOS() {
+      var ua = navigator.userAgent || "";
+      var isIOS =
+        /iPad|iPhone|iPod/.test(ua) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var isAndroid = /Android/.test(ua);
+
+      if (isIOS) return "ios";
+      if (isAndroid) return "android";
+      return null;
+    }
+
+    function showFallback() {
+      document.getElementById("autoRedirect").style.display = "none";
+      document.getElementById("storeButtons").classList.add("visible");
+    }
+
+    document.getElementById("iosButton").href = APP_STORE_URL;
+    document.getElementById("androidButton").href = PLAY_STORE_URL;
+
+    var os = detectOS();
+    if (os === "ios" && !isPlaceholder(APP_STORE_URL)) {
+      location.replace(APP_STORE_URL);
+    } else if (os === "android" && !isPlaceholder(PLAY_STORE_URL)) {
+      location.replace(PLAY_STORE_URL);
+    } else {
+      showFallback();
+    }
+  </script>
+</body>
+</html>
