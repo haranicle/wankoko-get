@@ -182,11 +182,11 @@
 
     function showFallback() {
       document.getElementById("autoRedirect").style.display = "none";
-      document.getElementById("storeButtons").classList.add("visible");
     }
 
     document.getElementById("iosButton").href = APP_STORE_URL;
     document.getElementById("androidButton").href = PLAY_STORE_URL;
+    document.getElementById("storeButtons").classList.add("visible");
 
     var os = detectOS();
     if (os === "ios" && !isPlaceholder(APP_STORE_URL)) {
